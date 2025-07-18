@@ -1,4 +1,10 @@
- const targetWord = "MATUTULOG";
+ const usearch = new URLSearchParams(window.location.search);
+ const list = [
+     "BEBI", 
+     "NUMBERS"
+ ]
+ 
+ const targetWord = list[decodeURIComponent(usearch.get("importance") ?? 0)];
     let guessed = Array(targetWord.length).fill("_");
 
     const wordDisplay = document.getElementById("wordDisplay");
