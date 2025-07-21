@@ -1,6 +1,6 @@
  const usearch = new URLSearchParams(window.location.search);
  const list = [
-     "BEBI", 
+     "CORINTHIANS", 
      "NUMBERS"
  ]
  
